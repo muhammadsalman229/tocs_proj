@@ -9,9 +9,7 @@ pipeline {
                         remoteDirectory = '/var/www/html'
                     } else if (env.BRANCH_NAME == 'feature_1') {
                         remoteDirectory = '/var/www/html/feature_1'
-                    } else if (env.BRANCH_NAME == 'feature_2') {
-                        remoteDirectory = '/var/www/html/feature_2'
-                    }
+                    } 
                     
                     sshPublisher(
                         publishers: [
