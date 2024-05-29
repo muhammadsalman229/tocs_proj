@@ -17,7 +17,7 @@ pipeline {
                                 configName: 'ApacheServer',
                                 transfers: [
                                     sshTransfer(
-                                        sourceFiles: '*/.html, */.css, */images//',
+                                        sourceFiles: '**/*.html',
                                         remoteDirectory: remoteDirectory,
                                         removePrefix: '',
                                         execCommand: ''
